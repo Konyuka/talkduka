@@ -1,3 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Titillium+Web:wght@300&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+  height: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: #E5E7EB;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  /* background: #cbd5e0; */
+  background: rgb(56,178,172);
+  background: linear-gradient(90deg, rgba(56,178,172,1) 0%, rgba(0,172,193,1) 35%, rgba(0,212,255,1) 100%);
+  border-radius: 100vh;
+  border: 3px solid #ffffff;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #edf2f7;
+}

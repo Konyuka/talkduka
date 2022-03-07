@@ -1,4 +1,7 @@
 module.exports = {
+  // purge: [
+  //   './src/**/*.{vue,js,ts,jsx,tsx}'
+  // ],
   content: [
     './components/**/*.{js,vue,ts}',
     './layouts/**/*.vue',
@@ -7,7 +10,12 @@ module.exports = {
     './nuxt.config.{js,ts}'
   ],
   theme: {
-    extend: {}
+    extend: {
+      fontFamily: {
+        'heading-font': ['Titillium Web', 'cursive'],
+        'primary-font': ['Dosis', 'cursive']
+      }
+    }
   },
   plugins: []
 }

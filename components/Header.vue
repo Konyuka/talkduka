@@ -1,6 +1,6 @@
 <template>
-  <div class="2xl:container 2xl:mx-auto">
-    <div class="bg-white rounded shadow-lg py-5 px-7">
+  <div class="3xl:container 2xl:mx-auto">
+    <div class="bg-gray-100 rounded shadow-lg py-2 ">
       <nav class="flex justify-center">
         <!-- <div class="flex items-center space-x-3 lg:pr-16 pr-6">
           <img class="cursor-pointer" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/header-1-svg1.svg" alt="circle">
@@ -77,6 +77,13 @@
 </template>
 
 <script>
+// import { fas } from '@fortawesome/free-solid-svg-icons'
+// library.add(fas)
+// import { fab } from '@fortawesome/free-brands-svg-icons'
+// library.add(fab)
+// import { far } from '@fortawesome/free-regular-svg-icons'
+// // library.add(far);
+
 export default {
   name: 'HeaderComp'
 }
