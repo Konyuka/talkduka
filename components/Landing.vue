@@ -1,5 +1,7 @@
 <template>
   <div class="bg-white">
+    <Header />
+
     <div class="relative overflow-hidden">
       <header class="relative">
         <div class="bg-gray-900 pt-6">
@@ -28,18 +30,18 @@
                 </div>
               </div>
               <div class="hidden space-x-8 md:flex md:ml-10">
-                <a href="#" class="text-base font-medium text-white hover:text-gray-300">Product</a>
+                <a href="#" class="text-base font-medium text-white hover:text-gray-300">Products</a>
 
-                <a href="#" class="text-base font-medium text-white hover:text-gray-300">Features</a>
+                <a href="#" class="text-base font-medium text-white hover:text-gray-300">Pricing</a>
 
-                <a href="#" class="text-base font-medium text-white hover:text-gray-300">Marketplace</a>
+                <a href="#" class="text-base font-medium text-white hover:text-gray-300">Blogs</a>
 
                 <a href="#" class="text-base font-medium text-white hover:text-gray-300">Company</a>
               </div>
             </div>
             <div class="hidden md:flex md:items-center md:space-x-6">
               <a href="#" class="text-base font-medium text-white hover:text-gray-300"> Log in </a>
-              <a href="#" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700"> Start free trial </a>
+              <a href="#" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-teal-500 to-cyan-600 hover:bg-gray-700"> Register</a>
             </div>
           </nav>
         </div>
@@ -79,11 +81,11 @@
             </div>
             <div class="pt-5 pb-6">
               <div class="px-2 space-y-1">
-                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">Product</a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">Products</a>
 
-                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">Features</a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">Pricing</a>
 
-                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">Marketplace</a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">Blogs</a>
 
                 <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">Company</a>
               </div>
@@ -106,19 +108,45 @@
               <div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center">
                 <div class="lg:py-24">
                   <a href="#" class="inline-flex items-center text-white bg-black rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-gray-200">
-                    <span class="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-gradient-to-r from-teal-500 to-cyan-600 rounded-full">We're hiring</span>
-                    <span class="ml-4 text-sm">Visit our careers page</span>
+                    <span class="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-gradient-to-r from-teal-500 to-cyan-600 rounded-full">Bulk SMS & Call Center</span>
+                    <span class="ml-4 text-sm">Kenya, Tanzania, Uganda & more</span>
                     <!-- Heroicon name: solid/chevron-right -->
                     <svg class="ml-2 w-5 h-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                       <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
                     </svg>
                   </a>
                   <h1 class="mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
-                    <span class="block">A better way to</span>
-                    <span class="pb-3 block bg-clip-text text-transparent bg-gradient-to-r from-teal-200 to-cyan-400 sm:pb-5">ship web apps</span>
+                    <span class="block">TALK</span>
+                    <span class="pb-3 block bg-clip-text text-transparent bg-gradient-to-r from-teal-200 to-cyan-400 sm:pb-5">DUKA</span>
                   </h1>
                   <p class="text-base text-gray-300 sm:text-xl lg:text-lg xl:text-xl">
-                    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat.
+                    Your One Stop Talk Shop <br>
+                  </p>
+                  <div class="mt-4">
+                    <ol class="hidden md:flex flex-auto space-x-2">
+                      <li onclick="selected()" class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 text-white  bg-gradient-to-r from-teal-500 to-cyan-600 cursor-pointer px-3 py-2.5 font-normal text-xs leading-3 shadow-md rounded">
+                        Bulk SMS
+                      </li>
+                      <li onclick="selected()" class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 text-white  bg-gradient-to-r from-teal-500 to-cyan-600 cursor-pointer px-3 py-2.5 font-normal text-xs leading-3 shadow-md rounded">
+                        Call Center Systems
+                      </li>
+                      <li onclick="selected()" class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 text-white  bg-gradient-to-r from-teal-500 to-cyan-600 cursor-pointer px-3 py-2.5 font-normal text-xs leading-3 shadow-md rounded">
+                        Bulk Airtime
+                      </li>
+                      <li onclick="selected()" class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 text-white  bg-gradient-to-r from-teal-500 to-cyan-600 cursor-pointer px-3 py-2.5 font-normal text-xs leading-3 shadow-md rounded">
+                        WhatsApp Business
+                      </li>
+                      <li onclick="selected()" class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 text-white  bg-gradient-to-r from-teal-500 to-cyan-600 cursor-pointer px-3 py-2.5 font-normal text-xs leading-3 shadow-md rounded">
+                        USSD Service
+                      </li>
+                      <li onclick="selected()" class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 text-white  bg-gradient-to-r from-teal-500 to-cyan-600 cursor-pointer px-3 py-2.5 font-normal text-xs leading-3 shadow-md rounded">
+                        Contact Databases
+                      </li>
+                    </ol>
+                  </div>
+                  <p class="text-base text-gray-300 sm:text-md lg:text-md xl:text-md mt-2">
+                    Provider of Bulk SMS Messaging & Call Center Systems.<br>
+                    Enjoy API integrations, Stability, Security and Realtime support.
                   </p>
                   <div class="mt-10 sm:mt-12">
                     <form action="#" class="sm:max-w-xl sm:mx-auto lg:mx-0">
@@ -129,12 +157,13 @@
                         </div>
                         <div class="mt-3 sm:mt-0 sm:ml-3">
                           <button type="submit" class="block w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
-                            Start free trial
+                            Request Free Demo
                           </button>
                         </div>
                       </div>
                       <p class="mt-3 text-sm text-gray-300 sm:mt-4">
-                        Start your free 14-day trial, no credit card necessary. By providing your email, you agree to our <a href="#" class="font-medium text-white">terms of service</a>.
+                        Book one of our support for demo, testing, integrations and eny other enquiries <br>
+                        <a href="#" class="font-medium text-white">Contact Us On</a>.
                       </p>
                     </form>
                   </div>
@@ -150,38 +179,18 @@
           </div>
         </div>
 
-        <!-- Feature section with screenshot -->
-        <div class="relative bg-gray-50 pt-16 sm:pt-24 lg:pt-32">
-          <div class="mx-auto max-w-md px-4 text-center sm:px-6 sm:max-w-3xl lg:px-8 lg:max-w-7xl">
-            <div>
-              <h2 class="text-base font-semibold tracking-wider text-cyan-600 uppercase">
-                Serverless
-              </h2>
-              <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
-                No server? No problem.
-              </p>
-              <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
-                Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.
-              </p>
-            </div>
-            <div class="mt-12 -mb-10 sm:-mb-24 lg:-mb-80">
-              <img class="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5" src="https://tailwindui.com/img/component-images/green-project-app-screenshot.jpg" alt="">
-            </div>
-          </div>
-        </div>
-
         <!-- Feature section with grid -->
         <div class="relative bg-white py-16 sm:py-24 lg:py-32">
           <div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
             <h2 class="text-base font-semibold tracking-wider text-cyan-600 uppercase">
-              Deploy faster
+              Talk Duka
             </h2>
             <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
-              Everything you need to deploy your app
+              Products Catalogue
             </p>
-            <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
+            <!-- <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
               Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.
-            </p>
+            </p> -->
             <div class="mt-12">
               <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
                 <div class="pt-6">
@@ -203,7 +212,7 @@
                         </span>
                       </div>
                       <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
-                        Push to Deploy
+                        Call Center Systems
                       </h3>
                       <p class="mt-5 text-base text-gray-500">
                         Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi vitae lobortis.
@@ -231,7 +240,7 @@
                         </span>
                       </div>
                       <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
-                        SSL Certificates
+                        Bulk SMS
                       </h3>
                       <p class="mt-5 text-base text-gray-500">
                         Qui aut temporibus nesciunt vitae dicta repellat sit dolores pariatur. Temporibus qui illum aut.
@@ -259,7 +268,7 @@
                         </span>
                       </div>
                       <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
-                        Simple Queues
+                        Bulk Airtime
                       </h3>
                       <p class="mt-5 text-base text-gray-500">
                         Rerum quas incidunt deleniti quaerat suscipit mollitia. Amet repellendus ut odit dolores qui.
@@ -287,7 +296,7 @@
                         </span>
                       </div>
                       <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
-                        Advanced Security
+                        Short Code & Sender ID's
                       </h3>
                       <p class="mt-5 text-base text-gray-500">
                         Ullam laboriosam est voluptatem maxime ut mollitia commodi. Et dignissimos suscipit perspiciatis.
@@ -316,7 +325,7 @@
                         </span>
                       </div>
                       <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
-                        Powerful API
+                        WhatsApp Business
                       </h3>
                       <p class="mt-5 text-base text-gray-500">
                         Ab a facere voluptatem in quia corrupti veritatis aliquam. Veritatis labore quaerat ipsum quaerat id.
@@ -344,7 +353,119 @@
                         </span>
                       </div>
                       <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
-                        Database Backups
+                        USSD Service
+                      </h3>
+                      <p class="mt-5 text-base text-gray-500">
+                        Quia qui et est officia cupiditate qui consectetur. Ratione similique et impedit ea ipsum et.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pt-6">
+                  <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                    <div class="-mt-6">
+                      <div>
+                        <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
+                          <!-- Heroicon name: outline/server -->
+                          <svg
+                            class="h-6 w-6 text-white"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                          >
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
+                          </svg>
+                        </span>
+                      </div>
+                      <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
+                        Text After Mpesa
+                      </h3>
+                      <p class="mt-5 text-base text-gray-500">
+                        Quia qui et est officia cupiditate qui consectetur. Ratione similique et impedit ea ipsum et.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pt-6">
+                  <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                    <div class="-mt-6">
+                      <div>
+                        <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
+                          <!-- Heroicon name: outline/server -->
+                          <svg
+                            class="h-6 w-6 text-white"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                          >
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
+                          </svg>
+                        </span>
+                      </div>
+                      <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
+                        Political SMS Marketing
+                      </h3>
+                      <p class="mt-5 text-base text-gray-500">
+                        Quia qui et est officia cupiditate qui consectetur. Ratione similique et impedit ea ipsum et.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pt-6">
+                  <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                    <div class="-mt-6">
+                      <div>
+                        <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
+                          <!-- Heroicon name: outline/server -->
+                          <svg
+                            class="h-6 w-6 text-white"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                          >
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
+                          </svg>
+                        </span>
+                      </div>
+                      <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
+                        Mobile Number and Email Databases
+                      </h3>
+                      <p class="mt-5 text-base text-gray-500">
+                        Quia qui et est officia cupiditate qui consectetur. Ratione similique et impedit ea ipsum et.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pt-6">
+                  <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                    <div class="-mt-6">
+                      <div>
+                        <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
+                          <!-- Heroicon name: outline/server -->
+                          <svg
+                            class="h-6 w-6 text-white"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                          >
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
+                          </svg>
+                        </span>
+                      </div>
+                      <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
+                        Communication Equipment
                       </h3>
                       <p class="mt-5 text-base text-gray-500">
                         Quia qui et est officia cupiditate qui consectetur. Ratione similique et impedit ea ipsum et.
