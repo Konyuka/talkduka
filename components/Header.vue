@@ -1,6 +1,6 @@
 <template>
   <div class="3xl:container 2xl:mx-auto">
-    <div class="bg-gray-100 rounded shadow-lg py-2 ">
+    <div class="bg-gradient-to-r from-gray-200 to-gray-300 rounded shadow-lg py-2 ">
       <nav class="flex justify-center">
         <!-- <div class="flex items-center space-x-3 lg:pr-16 pr-6">
           <img class="cursor-pointer" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/header-1-svg1.svg" alt="circle">
@@ -38,12 +38,13 @@
             <div class=" w-1.5 h-1.5 bg-indigo-700 rounded-full absolute -top-1 -right-1 m-auto shadow-lg" />
           </div>
 
+          <i class="fab fa-facebook"></i>
+
           <img class="cursor-pointer  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/header-1-svg3.svg" alt="bell">
         </div>
       </nav>
       <!-- for smaller devcies -->
-
-      <div class="block md:hidden w-full mt-5 ">
+      <!-- <div class="block md:hidden w-full mt-5 ">
         <div onclick="selectNew()" class="cursor-pointer px-4 py-3 text-white bg-indigo-600 rounded flex justify-between items-center w-full">
           <div class="flex space-x-2">
             <span id="s1" class="font-semibold text-sm leading-3 hidden">Selected: </span><p id="textClicked" class="font-normal text-sm leading-3 focus:outline-none hover:bg-gray-800 duration-100 cursor-pointer ">
@@ -71,20 +72,17 @@
             </li>
           </ul>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
 
 <script>
-// import { fas } from '@fortawesome/free-solid-svg-icons'
-// library.add(fas)
-// import { fab } from '@fortawesome/free-brands-svg-icons'
-// library.add(fab)
-// import { far } from '@fortawesome/free-regular-svg-icons'
-// // library.add(far);
-
 export default {
   name: 'HeaderComp'
 }
 </script>
+
+<style scoped>
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css';
+</style>
