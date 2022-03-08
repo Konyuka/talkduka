@@ -1,5 +1,4 @@
 <template>
-  <!-- <Tutorial /> -->
   <Landing />
 </template>
 
