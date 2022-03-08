@@ -1,9 +1,9 @@
 <template>
   <div class="bg-white">
-    <Header />
+    <Header class="shadow-2xl" />
 
     <div class="relative overflow-hidden">
-      <header class="relative">
+      <header class="relative sticky top-0 z-50">
         <div class="bg-gray-900 pt-6">
           <nav class="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6" aria-label="Global">
             <div class="flex items-center flex-1">
@@ -119,9 +119,9 @@
                     <span class="block">TALK</span>
                     <span class="pb-3 block bg-clip-text text-transparent bg-gradient-to-r from-teal-200 to-cyan-400 sm:pb-5">DUKA</span>
                   </h1>
-                  <p class="text-base text-gray-300 sm:text-xl lg:text-lg xl:text-xl">
+                  <!-- <p class="text-base text-gray-300 sm:text-xl lg:text-lg xl:text-xl">
                     Your One Stop Talk Shop <br>
-                  </p>
+                  </p> -->
                   <div class="mt-4">
                     <ol class="hidden md:flex flex-auto space-x-2">
                       <li onclick="selected()" class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 text-white  bg-gradient-to-r from-teal-500 to-cyan-600 cursor-pointer px-3 py-2.5 font-normal text-xs leading-3 shadow-md rounded">
@@ -163,7 +163,7 @@
                       </div>
                       <p class="mt-3 text-sm text-gray-300 sm:mt-4">
                         Book one of our support for demo, testing, integrations and eny other enquiries <br>
-                        <a href="#" class="font-medium text-white">Contact Us On</a>.
+                        <!-- <a href="#" class="font-medium text-white">Contact Us On</a>. -->
                       </p>
                     </form>
                   </div>
@@ -519,13 +519,10 @@
           <div class="relative">
             <div class="text-center mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
               <h2 class="text-base font-semibold tracking-wider text-cyan-600 uppercase">
-                Learn
+                Talk Duka Articles
               </h2>
               <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
                 Helpful Resources
-              </p>
-              <p class="mt-5 mx-auto max-w-prose text-xl text-gray-500">
-                Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.
               </p>
             </div>
             <div class="mt-12 mx-auto max-w-md px-4 grid gap-8 sm:max-w-lg sm:px-6 lg:px-8 lg:grid-cols-3 lg:max-w-7xl">

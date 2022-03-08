@@ -1,7 +1,7 @@
 <template>
-  <div class="3xl:container 2xl:mx-auto">
-    <div class="bg-gradient-to-r from-gray-200 to-gray-300 rounded shadow-lg py-2 ">
-      <nav class="flex justify-center">
+  <div class="3xl:container 2xl:mx-auto sticky top-0 z-50">
+    <div class="bg-gradient-to-r from-gray-100 to-gray-200 rounded shadow-lg py-2 ">
+      <nav class="flex justify-around">
         <!-- <div class="flex items-center space-x-3 lg:pr-16 pr-6">
           <img class="cursor-pointer" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/header-1-svg1.svg" alt="circle">
           <h2 class="font-normal text-2xl leading-6 text-gray-800">
@@ -30,17 +30,27 @@
             Cards
           </li>
         </ul> -->
-        <div />
-        <div class=" flex space-x-5 justify-center items-center pl-2">
-          <div class="relative cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 ">
-            <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/header-1-svg2.svg" alt="chat">
-            <div class="animate-ping w-1.5 h-1.5 bg-indigo-700 rounded-full absolute -top-1 -right-1 m-auto duration-200" />
-            <div class=" w-1.5 h-1.5 bg-indigo-700 rounded-full absolute -top-1 -right-1 m-auto shadow-lg" />
+        <div>
+          <div class="relative cursor-pointer">
+            <!-- <i class="fas fa-phone fa-lg" /> -->
+            <i class="fas fa-paper-plane fa-lg" /> <span class="font-bold">info@talkduka.co.ke</span>
+            <!-- <div class="animate-ping w-1.5 h-1.5 bg-indigo-700 rounded-full absolute -top-1 -right-1 m-auto duration-200" /> -->
           </div>
+        </div>
 
-          <i class="fab fa-facebook"></i>
+        <div class="mr-4">
+          <div class="relative cursor-pointer">
+            <!-- <div class="animate-ping w-1.5 h-1.5 bg-indigo-700 rounded-full absolute -top-1 -right-1 m-auto duration-200" /> -->
+            <i class="fas fa-phone fa-lg" /> <span class="font-bold">+254 716 202 298</span>
+          </div>
+        </div>
 
-          <img class="cursor-pointer  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 " src="https://tuk-cdn.s3.amazonaws.com/can-uploader/header-1-svg3.svg" alt="bell">
+        <!-- <div /> -->
+        <div class=" flex space-x-5 justify-center items-center pl-2">
+          <i class="fab fa-facebook fa-lg" />
+          <i class="fab fa-instagram fa-lg" />
+          <i class="fab fa-twitter fa-lg" />
+          <i class="fab fa-google fa-lg" />
         </div>
       </nav>
       <!-- for smaller devcies -->
