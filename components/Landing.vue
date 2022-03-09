@@ -157,7 +157,7 @@
                         </div>
                         <div class="mt-3 sm:mt-0 sm:ml-3">
                           <button type="submit" class="transform transition duration-700 ease-in-out hover:animate-pulse active:animate-ping  font-primary-font block w-full py-3 px-9 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
-                            Request Free Demo <i class="fas fa-paper-plane ml-2"></i>
+                            Request Free Demo <i class="fas fa-paper-plane ml-2" />
                           </button>
                         </div>
                       </div>
