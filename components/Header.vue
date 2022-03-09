@@ -31,7 +31,7 @@
           </li>
         </ul> -->
         <div>
-          <div class="relative cursor-pointer">
+          <div class="relative cursor-pointer transform transition hover:scale-125 duration-700 ease-in-out hover:text-cyan-600">
             <!-- <i class="fas fa-phone fa-lg" /> -->
             <i class="fas fa-paper-plane fa-lg" /> <span class="font-bold">info@talkduka.co.ke</span>
             <!-- <div class="animate-ping w-1.5 h-1.5 bg-indigo-700 rounded-full absolute -top-1 -right-1 m-auto duration-200" /> -->
@@ -39,7 +39,7 @@
         </div>
 
         <div class="mr-4">
-          <div class="relative cursor-pointer">
+          <div class="relative cursor-pointer transform transition hover:scale-125 duration-700 ease-in-out hover:text-cyan-600">
             <!-- <div class="animate-ping w-1.5 h-1.5 bg-indigo-700 rounded-full absolute -top-1 -right-1 m-auto duration-200" /> -->
             <i class="fas fa-phone fa-lg" /> <span class="font-bold">+254 716 202 298</span>
           </div>
@@ -47,10 +47,10 @@
 
         <!-- <div /> -->
         <div class=" flex space-x-5 justify-center items-center pl-2">
-          <i class="fab fa-facebook fa-lg" />
-          <i class="fab fa-instagram fa-lg" />
-          <i class="fab fa-twitter fa-lg" />
-          <i class="fab fa-google fa-lg" />
+          <i class="cursor-pointer fab fa-facebook fa-lg transform transition hover:scale-125 duration-700 ease-in-out hover:text-cyan-600" />
+          <i class="cursor-pointer fab fa-instagram fa-lg transform transition hover:scale-125 duration-700 ease-in-out hover:text-cyan-600" />
+          <i class="cursor-pointer fab fa-twitter fa-lg transform transition hover:scale-125 duration-700 ease-in-out hover:text-cyan-600" />
+          <i class="cursor-pointer fab fa-google fa-lg transform transition hover:scale-125 duration-700 ease-in-out hover:text-cyan-600" />
         </div>
       </nav>
       <!-- for smaller devcies -->

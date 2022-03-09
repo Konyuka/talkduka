@@ -30,18 +30,18 @@
                 </div>
               </div>
               <div class="hidden space-x-8 md:flex md:ml-10 font-heading-font">
-                <a href="#" class="text-base font-bold text-white hover:text-gray-300">Products</a>
+                <a href="#" class="text-base font-bold text-white hover:text-gray-300 transform transition hover:scale-125 duration-700 ease-in-out">Products</a>
 
-                <a href="#" class="text-base font-bold text-white hover:text-gray-300">Pricing</a>
+                <a href="#" class="text-base font-bold text-white hover:text-gray-300 transform transition hover:scale-125 duration-700 ease-in-out">Pricing</a>
 
-                <a href="#" class="text-base font-bold text-white hover:text-gray-300">Blogs</a>
+                <a href="#" class="text-base font-bold text-white hover:text-gray-300 transform transition hover:scale-125 duration-700 ease-in-out">Blogs</a>
 
-                <a href="#" class="text-base font-bold text-white hover:text-gray-300">Company</a>
+                <a href="#" class="text-base font-bold text-white hover:text-gray-300 transform transition hover:scale-125 duration-700 ease-in-out">Company</a>
               </div>
             </div>
             <div class="hidden md:flex md:items-center md:space-x-6">
               <a href="#" class="text-base font-medium text-white hover:text-gray-300"> Log in </a>
-              <a href="#" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-teal-500 to-cyan-600 hover:bg-gray-700"> Register</a>
+              <a href="#" class="transform transition hover:scale-125 duration-700 ease-in-out hover:animate-pulse active:animate-ping  inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-teal-500 to-cyan-600 hover:bg-gray-700"> Register</a>
             </div>
           </nav>
         </div>
@@ -124,22 +124,22 @@
                   </p> -->
                   <div class="mt-4">
                     <ol class="hidden md:flex flex-auto space-x-2">
-                      <li onclick="selected()" class="font-primary-font focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 text-gray-200  bg-gradient-to-r from-teal-500 to-cyan-600 cursor-pointer px-3 py-2 font-bold text-md leading-3 shadow-md rounded">
+                      <li onclick="selected()" class="transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse active:animate-ping font-primary-font focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 text-gray-200  bg-gradient-to-r from-teal-500 to-cyan-600 cursor-pointer px-3 py-2 font-bold text-md leading-3 shadow-md rounded">
                         Bulk SMS
                       </li>
-                      <li onclick="selected()" class="font-primary-font focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 text-gray-200  bg-gradient-to-r from-teal-500 to-cyan-600 cursor-pointer px-3 py-2 font-bold text-md leading-3 shadow-md rounded">
+                      <li onclick="selected()" class="transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse active:animate-ping font-primary-font focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 text-gray-200  bg-gradient-to-r from-teal-500 to-cyan-600 cursor-pointer px-3 py-2 font-bold text-md leading-3 shadow-md rounded">
                         Call Center Systems
                       </li>
-                      <li onclick="selected()" class="font-primary-font focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 text-gray-200  bg-gradient-to-r from-teal-500 to-cyan-600 cursor-pointer px-3 py-2 font-bold text-md leading-3 shadow-md rounded">
+                      <li onclick="selected()" class="transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse active:animate-ping font-primary-font focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 text-gray-200  bg-gradient-to-r from-teal-500 to-cyan-600 cursor-pointer px-3 py-2 font-bold text-md leading-3 shadow-md rounded">
                         Bulk Airtime
                       </li>
-                      <li onclick="selected()" class="font-primary-font focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 text-gray-200  bg-gradient-to-r from-teal-500 to-cyan-600 cursor-pointer px-3 py-2 font-bold text-md leading-3 shadow-md rounded">
+                      <li onclick="selected()" class="transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse active:animate-ping font-primary-font focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 text-gray-200  bg-gradient-to-r from-teal-500 to-cyan-600 cursor-pointer px-3 py-2 font-bold text-md leading-3 shadow-md rounded">
                         WhatsApp Business
                       </li>
-                      <li onclick="selected()" class="font-primary-font focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 text-gray-200  bg-gradient-to-r from-teal-500 to-cyan-600 cursor-pointer px-3 py-2 font-bold text-md leading-3 shadow-md rounded">
+                      <li onclick="selected()" class="transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse active:animate-ping font-primary-font focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 text-gray-200  bg-gradient-to-r from-teal-500 to-cyan-600 cursor-pointer px-3 py-2 font-bold text-md leading-3 shadow-md rounded">
                         USSD Service
                       </li>
-                      <li onclick="selected()" class="font-primary-font focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 text-gray-200  bg-gradient-to-r from-teal-500 to-cyan-600 cursor-pointer px-3 py-2 font-bold text-md leading-3 shadow-md rounded">
+                      <li onclick="selected()" class="transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse active:animate-ping font-primary-font focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 text-gray-200  bg-gradient-to-r from-teal-500 to-cyan-600 cursor-pointer px-3 py-2 font-bold text-md leading-3 shadow-md rounded">
                         Contact Databases
                       </li>
                     </ol>
@@ -156,8 +156,8 @@
                           <input id="email" type="email" placeholder="Enter your email" class="block w-full px-4 py-3 rounded-md border-0 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
                         </div>
                         <div class="mt-3 sm:mt-0 sm:ml-3">
-                          <button type="submit" class="font-primary-font block w-full py-3 px-9 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
-                            Request Free Demo
+                          <button type="submit" class="transform transition duration-700 ease-in-out hover:animate-pulse active:animate-ping  font-primary-font block w-full py-3 px-9 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
+                            Request Free Demo <i class="fas fa-paper-plane ml-2"></i>
                           </button>
                         </div>
                       </div>
@@ -193,8 +193,8 @@
             </p> -->
             <div class="mt-12">
               <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                <div class="pt-6">
-                  <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                <div class="pt-6 transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse">
+                  <div class="flow-root bg-gray-100 rounded-lg px-6 pb-8">
                     <div class="-mt-6">
                       <div>
                         <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
@@ -218,8 +218,8 @@
                   </div>
                 </div>
 
-                <div class="pt-6">
-                  <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                <div class="pt-6 transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse">
+                  <div class="flow-root bg-gray-100 rounded-lg px-6 pb-8">
                     <div class="-mt-6">
                       <div>
                         <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
@@ -243,8 +243,8 @@
                   </div>
                 </div>
 
-                <div class="pt-6">
-                  <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                <div class="pt-6 transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse">
+                  <div class="flow-root bg-gray-100 rounded-lg px-6 pb-8">
                     <div class="-mt-6">
                       <div>
                         <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
@@ -268,8 +268,8 @@
                   </div>
                 </div>
 
-                <div class="pt-6">
-                  <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                <div class="pt-6 transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse">
+                  <div class="flow-root bg-gray-100 rounded-lg px-6 pb-8">
                     <div class="-mt-6">
                       <div>
                         <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
@@ -293,8 +293,8 @@
                   </div>
                 </div>
 
-                <div class="pt-6">
-                  <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                <div class="pt-6 transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse">
+                  <div class="flow-root bg-gray-100 rounded-lg px-6 pb-8">
                     <div class="-mt-6">
                       <div>
                         <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
@@ -319,8 +319,8 @@
                   </div>
                 </div>
 
-                <div class="pt-6">
-                  <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                <div class="pt-6 transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse">
+                  <div class="flow-root bg-gray-100 rounded-lg px-6 pb-8">
                     <div class="-mt-6">
                       <div>
                         <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
@@ -344,8 +344,8 @@
                   </div>
                 </div>
 
-                <div class="pt-6">
-                  <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                <div class="pt-6 transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse">
+                  <div class="flow-root bg-gray-100 rounded-lg px-6 pb-8">
                     <div class="-mt-6">
                       <div>
                         <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
@@ -369,8 +369,8 @@
                   </div>
                 </div>
 
-                <div class="pt-6">
-                  <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                <div class="pt-6 transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse">
+                  <div class="flow-root bg-gray-100 rounded-lg px-6 pb-8">
                     <div class="-mt-6">
                       <div>
                         <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
@@ -394,8 +394,8 @@
                   </div>
                 </div>
 
-                <div class="pt-6">
-                  <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                <div class="pt-6 transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse">
+                  <div class="flow-root bg-gray-100 rounded-lg px-6 pb-8">
                     <div class="-mt-6">
                       <div>
                         <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
