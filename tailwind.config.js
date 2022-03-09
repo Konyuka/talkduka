@@ -13,7 +13,9 @@ module.exports = {
     extend: {
       fontFamily: {
         'heading-font': ['Titillium Web', 'cursive'],
-        'primary-font': ['Dosis', 'cursive']
+        'primary-font': ['Dosis', 'cursive'],
+        'saiba-font': ['Staatliches', 'cursive'],
+        'saibas-font': ['Cinzel', 'cursive']
       }
     }
   },
