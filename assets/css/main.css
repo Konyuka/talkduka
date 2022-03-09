@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Titillium+Web:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Staatliches&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css');
 
 @tailwind base;
 @tailwind components;
