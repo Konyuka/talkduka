@@ -46,7 +46,7 @@
         </div>
 
         <!-- <div /> -->
-        <div class=" flex space-x-5 justify-center items-center pl-2">
+        <div class="hidden md:flex space-x-5 justify-center items-center pl-2">
           <i class="cursor-pointer fab fa-facebook fa-lg transform transition hover:scale-125 duration-700 ease-in-out hover:text-cyan-600" />
           <i class="cursor-pointer fab fa-instagram fa-lg transform transition hover:scale-125 duration-700 ease-in-out hover:text-cyan-600" />
           <i class="cursor-pointer fab fa-twitter fa-lg transform transition hover:scale-125 duration-700 ease-in-out hover:text-cyan-600" />
