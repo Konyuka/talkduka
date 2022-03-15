@@ -33,15 +33,18 @@
         <div>
           <div class="relative cursor-pointer transform transition hover:scale-125 duration-700 ease-in-out hover:text-cyan-600">
             <!-- <i class="fas fa-phone fa-lg" /> -->
-            <i class="fas fa-paper-plane fa-lg" /> <span class="font-bold">info@talkduka.co.ke</span>
-            <!-- <div class="animate-ping w-1.5 h-1.5 bg-indigo-700 rounded-full absolute -top-1 -right-1 m-auto duration-200" /> -->
+            <a href="mailto:info@talkduka.co.ke">
+              <i class="fas fa-paper-plane fa-lg" /> <span class="font-bold">info@talkduka.co.ke</span>
+            </a>
           </div>
         </div>
 
         <div class="mr-4">
           <div class="relative cursor-pointer transform transition hover:scale-125 duration-700 ease-in-out hover:text-cyan-600">
             <!-- <div class="animate-ping w-1.5 h-1.5 bg-indigo-700 rounded-full absolute -top-1 -right-1 m-auto duration-200" /> -->
-            <i class="fas fa-phone fa-lg" /> <span class="font-bold">+254 716 202 298</span>
+            <a href="tel:254716202298">
+              <i class="fas fa-phone fa-lg" /> <span class="font-bold">+254 716 202 298</span>
+            </a>
           </div>
         </div>
 

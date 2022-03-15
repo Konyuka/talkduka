@@ -57,7 +57,7 @@
               </ul>
             </div>
           </div>
-          <div class="md:grid md:grid-cols-2 md:gap-8">
+          <div class="hidden md:grid md:grid-cols-2 md:gap-8">
             <div>
               <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
                 Company
@@ -103,7 +103,8 @@
       </div>
       <div class="mt-12 border-t border-gray-200 py-8">
         <p class="text-base text-gray-400 xl:text-center">
-          &copy; 2022 Talk Duka. All rights reserved. Developed with <i class="fas fa-heart text-red-400" /> by <span class="text-red-600 font-extrabold underline font-saibas-font text-lg">Saiba <i class="ml-2 fas fa-caret-right" /> </span>
+          <!-- &copy; 2022 Talk Duka. All rights reserved. -->
+          Developed with <i class="fas fa-heart text-red-400" /> by <span class="text-red-600 font-extrabold underline font-saibas-font text-lg">  Saiba </span>
         </p>
       </div>
     </div>
