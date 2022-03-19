@@ -197,7 +197,7 @@
             </p> -->
             <div class="mt-12 px-5">
               <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                <a class="pt-6 transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse">
+                <a href="" class="pt-6 transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse">
                   <div class="flow-root bg-gray-100 rounded-lg px-6 pb-8">
                     <div class="-mt-6">
                       <div>
@@ -222,7 +222,7 @@
                   </div>
                 </a>
 
-                <div class="pt-6 transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse">
+                <a href="" class="pt-6 transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse">
                   <div class="flow-root bg-gray-100 rounded-lg px-6 pb-8">
                     <div class="-mt-6">
                       <div>
@@ -245,9 +245,9 @@
                       </h3>
                     </div>
                   </div>
-                </div>
+                </a>
 
-                <div class="pt-6 transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse">
+                <a href="" class="pt-6 transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse">
                   <div class="flow-root bg-gray-100 rounded-lg px-6 pb-8">
                     <div class="-mt-6">
                       <div>
@@ -270,9 +270,9 @@
                       </h3>
                     </div>
                   </div>
-                </div>
+                </a>
 
-                <div class="pt-6 transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse">
+                <a href="" class="pt-6 transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse">
                   <div class="flow-root bg-gray-100 rounded-lg px-6 pb-8">
                     <div class="-mt-6">
                       <div>
@@ -295,9 +295,9 @@
                       </h3>
                     </div>
                   </div>
-                </div>
+                </a>
 
-                <div class="pt-6 transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse">
+                <a href="" class="pt-6 transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse">
                   <div class="flow-root bg-gray-100 rounded-lg px-6 pb-8">
                     <div class="-mt-6">
                       <div>
@@ -321,9 +321,9 @@
                       </h3>
                     </div>
                   </div>
-                </div>
+                </a>
 
-                <div class="pt-6 transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse">
+                <a href="" class="pt-6 transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse">
                   <div class="flow-root bg-gray-100 rounded-lg px-6 pb-8">
                     <div class="-mt-6">
                       <div>
@@ -346,9 +346,9 @@
                       </h3>
                     </div>
                   </div>
-                </div>
+                </a>
 
-                <div class="pt-6 transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse">
+                <a href="" class="pt-6 transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse">
                   <div class="flow-root bg-gray-100 rounded-lg px-6 pb-8">
                     <div class="-mt-6">
                       <div>
@@ -371,9 +371,9 @@
                       </h3>
                     </div>
                   </div>
-                </div>
+                </a>
 
-                <div class="pt-6 transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse">
+                <a href="" class="pt-6 transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse">
                   <div class="flow-root bg-gray-100 rounded-lg px-6 pb-8">
                     <div class="-mt-6">
                       <div>
@@ -396,9 +396,9 @@
                       </h3>
                     </div>
                   </div>
-                </div>
+                </a>
 
-                <div class="pt-6 transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse">
+                <a href="" class="pt-6 transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse">
                   <div class="flow-root bg-gray-100 rounded-lg px-6 pb-8">
                     <div class="-mt-6">
                       <div>
@@ -421,7 +421,7 @@
                       </h3>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -581,7 +581,7 @@ import vueScrollto from 'vue-scrollto'
 import Vue from 'vue'
 Vue.use(vueScrollto, {
   container: 'body',
-  duration: 10000,
+  duration: 2000,
   easing: 'ease',
   offset: 0,
   force: true,
