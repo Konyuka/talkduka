@@ -3,106 +3,226 @@
     <Header class="shadow-2xl" />
 
     <div class="relative overflow-hidden">
-      <header class="relative sticky top-0 z-50">
-        <div class="bg-gray-900 pt-6">
-          <nav class="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6" aria-label="Global">
-            <div class="flex items-center flex-1">
-              <div class="flex items-center justify-between w-full md:w-auto">
-                <a href="#">
-                  <span class="sr-only">Workflow</span>
-                  <img class="h-8 w-auto sm:h-10" src="https://tailwindui.com/img/logos/workflow-mark-teal-200-cyan-400.svg" alt="">
-                </a>
-                <div class="-mr-2 flex items-center md:hidden">
-                  <button type="button" class="bg-gray-900 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white" aria-expanded="false" @click="openMenu">
-                    <span class="sr-only">Open main menu</span>
-                    <!-- Heroicon name: outline/menu -->
-                    <svg
-                      class="h-6 w-6"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div class="hidden space-x-8 md:flex md:ml-10 font-heading-font">
-                <a v-scroll-to="'#products'" href="#" class="text-base font-bold text-white hover:text-gray-300 transform transition hover:scale-125 duration-700 ease-in-out">Products</a>
-
-                <a href="#" class="text-base font-bold text-white hover:text-gray-300 transform transition hover:scale-125 duration-700 ease-in-out">Pricing</a>
-
-                <a href="#" class="text-base font-bold text-white hover:text-gray-300 transform transition hover:scale-125 duration-700 ease-in-out">Blogs</a>
-
-                <a href="#" class="text-base font-bold text-white hover:text-gray-300 transform transition hover:scale-125 duration-700 ease-in-out">Company</a>
-              </div>
-            </div>
-            <div class="hidden md:flex md:items-center md:space-x-6">
-              <a href="#" class="text-base font-medium text-white hover:text-gray-300"> Log in </a>
-              <a href="#" class="transform transition hover:scale-125 duration-700 ease-in-out hover:animate-pulse active:animate-ping  inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-teal-500 to-cyan-600 hover:bg-gray-700"> Register</a>
-            </div>
-          </nav>
-        </div>
-
+      <Menu />
+      <main>
         <!--
-        Mobile menu, show/hide based on menu open state.
+  This example requires Tailwind CSS v2.0+
 
-        Entering: "duration-150 ease-out"
-          From: "opacity-0 scale-95"
-          To: "opacity-100 scale-100"
-        Leaving: "duration-100 ease-in"
-          From: "opacity-100 scale-100"
-          To: "opacity-0 scale-95"
-      -->
-        <div v-if="mobileMenu" class="absolute top-0 inset-x-0 p-2 transition transform origin-top md:hidden">
-          <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
-            <div class="px-5 pt-4 flex items-center justify-between">
-              <div>
-                <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-teal-500-cyan-600.svg" alt="">
+  This example requires some changes to your config:
+
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/aspect-ratio'),
+    ],
+  }
+  ```
+-->
+        <div class="bg-white">
+          <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-x-8">
+            <!-- Product details -->
+            <div class="lg:max-w-lg lg:self-end">
+              <nav aria-label="Breadcrumb">
+                <ol role="list" class="flex items-center space-x-2">
+                  <li>
+                    <div class="flex items-center text-sm">
+                      <a href="#" class="font-medium text-gray-500 hover:text-gray-900"> Travel </a>
+
+                      <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" class="ml-2 flex-shrink-0 h-5 w-5 text-gray-300">
+                        <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+                      </svg>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="flex items-center text-sm">
+                      <a href="#" class="font-medium text-gray-500 hover:text-gray-900"> Bags </a>
+                    </div>
+                  </li>
+                </ol>
+              </nav>
+
+              <div class="mt-4">
+                <h1 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                  Everyday Ruck Snack
+                </h1>
               </div>
-              <div class="-mr-2">
-                <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-600" @click="closeMenu">
-                  <span class="sr-only">Close menu</span>
-                  <!-- Heroicon name: outline/x -->
-                  <svg
-                    class="h-6 w-6"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+
+              <section aria-labelledby="information-heading" class="mt-4">
+                <h2 id="information-heading" class="sr-only">
+                  Product information
+                </h2>
+
+                <div class="flex items-center">
+                  <p class="text-lg text-gray-900 sm:text-xl">
+                    $220
+                  </p>
+
+                  <div class="ml-4 pl-4 border-l border-gray-300">
+                    <h2 class="sr-only">
+                      Reviews
+                    </h2>
+                    <div class="flex items-center">
+                      <div>
+                        <div class="flex items-center">
+                          <!--
+                    Heroicon name: solid/star
+
+                    Active: "text-yellow-400", Default: "text-gray-300"
+                  -->
+                          <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                          </svg>
+
+                          <!-- Heroicon name: solid/star -->
+                          <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                          </svg>
+
+                          <!-- Heroicon name: solid/star -->
+                          <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                          </svg>
+
+                          <!-- Heroicon name: solid/star -->
+                          <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                          </svg>
+
+                          <!-- Heroicon name: solid/star -->
+                          <svg class="text-gray-300 h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                          </svg>
+                        </div>
+                        <p class="sr-only">
+                          4 out of 5 stars
+                        </p>
+                      </div>
+                      <p class="ml-2 text-sm text-gray-500">
+                        1624 reviews
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-4 space-y-6">
+                  <p class="text-base text-gray-500">
+                    Don&#039;t compromise on snack-carrying capacity with this lightweight and spacious bag. The drawstring top keeps all your favorite chips, crisps, fries, biscuits, crackers, and cookies secure.
+                  </p>
+                </div>
+
+                <div class="mt-6 flex items-center">
+                  <!-- Heroicon name: solid/check -->
+                  <svg class="flex-shrink-0 w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                   </svg>
-                </button>
+                  <p class="ml-2 text-sm text-gray-500">
+                    In stock and ready to ship
+                  </p>
+                </div>
+              </section>
+            </div>
+
+            <!-- Product image -->
+            <div class="mt-10 lg:mt-0 lg:col-start-2 lg:row-span-2 lg:self-center">
+              <div class="aspect-w-1 aspect-h-1 rounded-lg overflow-hidden">
+                <img src="https://tailwindui.com/img/ecommerce-images/product-page-04-featured-product-shot.jpg" alt="Model wearing light green backpack with black canvas straps and front zipper pouch." class="w-full h-full object-center object-cover">
               </div>
             </div>
-            <div class="pt-5 pb-6">
-              <div class="px-2 space-y-1">
-                <a href="#" class="font-heading-font block px-3 py-2 rounded-md text-xl font-extrabold text-gray-900 hover:bg-gray-50">Products</a>
 
-                <a href="#" class="font-heading-font block px-3 py-2 rounded-md text-xl font-extrabold text-gray-900 hover:bg-gray-50">Pricing</a>
+            <!-- Product form -->
+            <div class="mt-10 lg:max-w-lg lg:col-start-1 lg:row-start-2 lg:self-start">
+              <section aria-labelledby="options-heading">
+                <h2 id="options-heading" class="sr-only">
+                  Product options
+                </h2>
 
-                <a href="#" class="font-heading-font block px-3 py-2 rounded-md text-xl font-extrabold text-gray-900 hover:bg-gray-50">Blogs</a>
+                <form>
+                  <div class="sm:flex sm:justify-between">
+                    <!-- Size selector -->
+                    <fieldset>
+                      <legend class="block text-sm font-medium text-gray-700">
+                        Size
+                      </legend>
+                      <div class="mt-1 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                        <!-- Active: "ring-2 ring-indigo-500" -->
+                        <label class="relative block border border-gray-300 rounded-lg p-4 cursor-pointer focus:outline-none">
+                          <input
+                            type="radio"
+                            name="size-choice"
+                            value="18L"
+                            class="sr-only"
+                            aria-labelledby="size-choice-0-label"
+                            aria-describedby="size-choice-0-description"
+                          >
+                          <p id="size-choice-0-label" class="text-base font-medium text-gray-900">18L</p>
+                          <p id="size-choice-0-description" class="mt-1 text-sm text-gray-500">Perfect for a reasonable amount of snacks.</p>
+                          <!--
+                    Active: "border", Not Active: "border-2"
+                    Checked: "border-indigo-500", Not Checked: "border-transparent"
+                  -->
+                          <div class="absolute -inset-px rounded-lg border-2 pointer-events-none" aria-hidden="true" />
+                        </label>
 
-                <a href="#" class="font-heading-font block px-3 py-2 rounded-md text-xl font-extrabold text-gray-900 hover:bg-gray-50">Company</a>
-              </div>
-              <div class="mt-6 px-5">
-                <a href="#" class="block text-center w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700">Register</a>
-              </div>
-              <div class="mt-6 px-5">
-                <p class="text-center text-base font-medium text-gray-500">
-                  Existing customer? <a href="#" class="text-gray-900 hover:underline">Login</a>
-                </p>
-              </div>
+                        <!-- Active: "ring-2 ring-indigo-500" -->
+                        <label class="relative block border border-gray-300 rounded-lg p-4 cursor-pointer focus:outline-none">
+                          <input
+                            type="radio"
+                            name="size-choice"
+                            value="20L"
+                            class="sr-only"
+                            aria-labelledby="size-choice-1-label"
+                            aria-describedby="size-choice-1-description"
+                          >
+                          <p id="size-choice-1-label" class="text-base font-medium text-gray-900">20L</p>
+                          <p id="size-choice-1-description" class="mt-1 text-sm text-gray-500">Enough room for a serious amount of snacks.</p>
+                          <!--
+                    Active: "border", Not Active: "border-2"
+                    Checked: "border-indigo-500", Not Checked: "border-transparent"
+                  -->
+                          <div class="absolute -inset-px rounded-lg border-2 pointer-events-none" aria-hidden="true" />
+                        </label>
+                      </div>
+                    </fieldset>
+                  </div>
+                  <div class="mt-4">
+                    <a href="#" class="group inline-flex text-sm text-gray-500 hover:text-gray-700">
+                      <span>What size should I buy?</span>
+                      <!-- Heroicon name: solid/question-mark-circle -->
+                      <svg class="flex-shrink-0 ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="mt-10">
+                    <button type="submit" class="w-full bg-indigo-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-indigo-500">
+                      Add to bag
+                    </button>
+                  </div>
+                  <div class="mt-6 text-center">
+                    <a href="#" class="group inline-flex text-base font-medium">
+                      <!-- Heroicon name: outline/shield-check -->
+                      <svg
+                        class="flex-shrink-0 mr-2 h-6 w-6 text-gray-400 group-hover:text-gray-500"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                      </svg>
+                      <span class="text-gray-500 hover:text-gray-700">Lifetime Guarantee</span>
+                    </a>
+                  </div>
+                </form>
+              </section>
             </div>
           </div>
         </div>
-      </header>
-      <main>
-        <p>Bulk SMS</p>
       </main>
       <Footer />
     </div>
