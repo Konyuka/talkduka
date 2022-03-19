@@ -29,7 +29,7 @@
                 <ol role="list" class="flex items-center space-x-2">
                   <li>
                     <div class="flex items-center text-sm">
-                      <a href="#" class="font-medium text-gray-500 hover:text-gray-900"> Travel </a>
+                      <a href="#" class="font-medium text-gray-500 hover:text-gray-900"> Products </a>
 
                       <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" class="ml-2 flex-shrink-0 h-5 w-5 text-gray-300">
                         <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
@@ -39,7 +39,7 @@
 
                   <li>
                     <div class="flex items-center text-sm">
-                      <a href="#" class="font-medium text-gray-500 hover:text-gray-900"> Bags </a>
+                      <span class="font-medium text-gray-300"> Bulk SMS </span>
                     </div>
                   </li>
                 </ol>
@@ -47,7 +47,7 @@
 
               <div class="mt-4">
                 <h1 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                  Everyday Ruck Snack
+                  Bulk SMS Messaging
                 </h1>
               </div>
 
@@ -58,7 +58,7 @@
 
                 <div class="flex items-center">
                   <p class="text-lg text-gray-900 sm:text-xl">
-                    $220
+                    Rate of 0.3 to 0.5 Ksh. Per SMS
                   </p>
 
                   <div class="ml-4 pl-4 border-l border-gray-300">
@@ -110,7 +110,7 @@
 
                 <div class="mt-4 space-y-6">
                   <p class="text-base text-gray-500">
-                    Don&#039;t compromise on snack-carrying capacity with this lightweight and spacious bag. The drawstring top keeps all your favorite chips, crisps, fries, biscuits, crackers, and cookies secure.
+                    Send effective text communication to your customers when they need it. Our easy-to-use and reliable SMS APIs provide a wide variety of ways for you to add text messaging to your mobile and web applications.
                   </p>
                 </div>
 
@@ -129,7 +129,7 @@
             <!-- Product image -->
             <div class="mt-10 lg:mt-0 lg:col-start-2 lg:row-span-2 lg:self-center">
               <div class="aspect-w-1 aspect-h-1 rounded-lg overflow-hidden">
-                <img src="https://tailwindui.com/img/ecommerce-images/product-page-04-featured-product-shot.jpg" alt="Model wearing light green backpack with black canvas straps and front zipper pouch." class="w-full h-full object-center object-cover">
+                <img src="~/assets/img/bulksms.jpg" alt="Model wearing light green backpack with black canvas straps and front zipper pouch." class="w-full h-full object-center object-cover">
               </div>
             </div>
 
@@ -224,7 +224,7 @@
           </div>
         </div>
       </main>
-      <Footer />
+      <!-- <Footer /> -->
     </div>
   </div>
 </template>
