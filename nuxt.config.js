@@ -42,7 +42,23 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios'
+    'vue-scrollto/nuxt',
+    // Or if you have custom options...
+    ['vue-scrollto/nuxt', { duration: 300 }],
+    '@nuxtjs/axios',
+    ['nuxt-mail', {
+      message: {
+        to: 'michaelsaiba84@gmail.com'
+      },
+      smtp: {
+        host: 'mail.talkduka.co.ke',
+        port: 465,
+        auth: {
+          user: 'saiba@talkduka.co.ke',
+          pass: 'Kitu8@4Secret'
+        }
+      }
+    }]
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

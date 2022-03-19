@@ -30,7 +30,7 @@
                 </div>
               </div>
               <div class="hidden space-x-8 md:flex md:ml-10 font-heading-font">
-                <a href="#" class="text-base font-bold text-white hover:text-gray-300 transform transition hover:scale-125 duration-700 ease-in-out">Products</a>
+                <a v-scroll-to="'#products'" href="#" class="text-base font-bold text-white hover:text-gray-300 transform transition hover:scale-125 duration-700 ease-in-out">Products</a>
 
                 <a href="#" class="text-base font-bold text-white hover:text-gray-300 transform transition hover:scale-125 duration-700 ease-in-out">Pricing</a>
 
@@ -151,12 +151,16 @@
                   <div class="mt-10 sm:mt-12">
                     <form action="#" class="sm:max-w-xl sm:mx-auto lg:mx-0">
                       <div class="sm:flex">
-                        <div class="min-w-0 flex-1">
+                        <div class="min-w-0 flex-1 mr-5">
                           <label for="email" class="sr-only">Email address</label>
-                          <input id="email" type="email" placeholder="Enter your email" class="block w-full px-4 py-3 rounded-md border-0 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
+                          <input id="email" v-model="demo.email" type="email" placeholder="Enter Email" class="font-primary-font block w-full px-2 py-3 rounded-md border-0 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
+                        </div>
+                        <div class="min-w-0 flex-1">
+                          <label for="email" class="sr-only">Phone number</label>
+                          <input id="email" v-model="demo.phone" type="number" placeholder="Enter Mobile" class="font-primary-font block w-full px-2 py-3 rounded-md border-0 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
                         </div>
                         <div class="mt-3 sm:mt-0 sm:ml-3">
-                          <button type="submit" class="transform transition duration-700 ease-in-out hover:animate-pulse active:animate-ping  font-primary-font block w-full py-3 px-9 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
+                          <button type="submit" class="transform transition duration-700 ease-in-out hover:animate-pulse active:animate-ping  font-primary-font block w-full py-3 px-3 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900" @click.prevent="requestDemo">
                             Request Free Demo <i class="fas fa-paper-plane ml-2" />
                           </button>
                         </div>
@@ -180,7 +184,7 @@
         </div>
 
         <!-- Feature section with grid -->
-        <div class="relative bg-white py-16 sm:py-24 lg:py-32">
+        <div id="products" class="relative bg-white py-16 sm:py-24 lg:py-32">
           <div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
             <h2 class="text-base font-semibold tracking-wider text-cyan-600 uppercase">
               Talk Duka
@@ -193,7 +197,7 @@
             </p> -->
             <div class="mt-12 px-5">
               <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                <div class="pt-6 transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse">
+                <a class="pt-6 transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse">
                   <div class="flow-root bg-gray-100 rounded-lg px-6 pb-8">
                     <div class="-mt-6">
                       <div>
@@ -216,7 +220,7 @@
                       </h3>
                     </div>
                   </div>
-                </div>
+                </a>
 
                 <div class="pt-6 transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse">
                   <div class="flow-root bg-gray-100 rounded-lg px-6 pb-8">
@@ -447,7 +451,7 @@
                       We are a Kenyan based company that offers Bulk SMS Messaging & Call Center or VOIP System solutions <br> <br>
                       We register Custom Sender ID's, Offer Telecom API's, Portals, System Integrations, Support and a lot more.
                       Experts in call center system integrations and dealers in telecommunication equipment. <br> <br>
-                      We solve you office and home needs with VOIP solutions and setup on devices such as landlines, android phones, PC & Laptops.
+                      We solve your office and home needs with VOIP solutions. Enjoy VOIP on devices such as landlines, android phones, PC & Laptops.
                       Feel free to contact us for demos and further explanations and illustrations
                     </p>
                   </div>
@@ -573,20 +577,46 @@
 </template>
 
 <script>
+import vueScrollto from 'vue-scrollto'
+import Vue from 'vue'
+Vue.use(vueScrollto, {
+  container: 'body',
+  duration: 10000,
+  easing: 'ease',
+  offset: 0,
+  force: true,
+  cancelable: true,
+  onStart: false,
+  onDone: false,
+  onCancel: false,
+  x: false,
+  y: true
+})
+
 export default {
   name: 'LandingPage',
   data () {
     return {
-      mobileMenu: false
+      mobileMenu: false,
+      demo: {
+        email: null,
+        phone: null
+      }
     }
   },
   methods: {
+    requestDemo () {
+      this.$mail.send({
+        from: this.demo.email,
+        subject: 'Contact form message',
+        text: this.demo.phone
+      })
+      alert('sent')
+    },
     closeMenu () {
-      // alert('chonjo chonjo')
       this.mobileMenu = false
     },
     openMenu () {
-      // alert('wazi johh')
       this.mobileMenu = true
     }
   }
