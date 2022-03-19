@@ -197,6 +197,30 @@
             </p> -->
             <div class="mt-12 px-5">
               <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <NuxtLink to="/products/bulk-sms/" class="pt-6 transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse">
+                  <div class="flow-root bg-gray-100 rounded-lg px-6 pb-8">
+                    <div class="-mt-6">
+                      <div>
+                        <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
+                          <!-- Heroicon name: outline/lock-closed -->
+                          <svg
+                            class="h-6 w-6 text-white"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                          >
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                          </svg>
+                        </span>
+                      </div>
+                      <h3 class="mt-8 text-2xl font-bold text-gray-900 tracking-tight font-primary-font">
+                        Bulk SMS
+                      </h3>
+                    </div>
+                  </div>
+                </NuxtLink>
                 <a href="" class="pt-6 transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse">
                   <div class="flow-root bg-gray-100 rounded-lg px-6 pb-8">
                     <div class="-mt-6">
@@ -217,31 +241,6 @@
                       </div>
                       <h3 class="mt-8 text-2xl font-bold text-gray-900 tracking-tight font-primary-font">
                         Call Center Systems
-                      </h3>
-                    </div>
-                  </div>
-                </a>
-
-                <a href="" class="pt-6 transform transition hover:scale-90 duration-700 ease-in-out hover:animate-pulse">
-                  <div class="flow-root bg-gray-100 rounded-lg px-6 pb-8">
-                    <div class="-mt-6">
-                      <div>
-                        <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
-                          <!-- Heroicon name: outline/lock-closed -->
-                          <svg
-                            class="h-6 w-6 text-white"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            aria-hidden="true"
-                          >
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                          </svg>
-                        </span>
-                      </div>
-                      <h3 class="mt-8 text-2xl font-bold text-gray-900 tracking-tight font-primary-font">
-                        Bulk SMS
                       </h3>
                     </div>
                   </div>
